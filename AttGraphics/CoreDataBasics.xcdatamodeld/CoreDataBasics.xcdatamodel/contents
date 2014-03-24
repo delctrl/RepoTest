@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CDAtributos" representedClassName="CDAtributos" syncable="YES">
+        <attribute name="carisma" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="constituicao" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="destreza" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="forca" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="inteligencia" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sabedoria" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDPersonagem" inverseName="relationship" inverseEntity="CDPersonagem" syncable="YES"/>
+    </entity>
+    <entity name="CDPersonagem" representedClassName="CDPersonagem" syncable="YES">
+        <attribute name="alinhamento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nivel" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="raca" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDAtributos" inverseName="relationship" inverseEntity="CDAtributos" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDPersonagem" positionX="160" positionY="192" width="128" height="133"/>
+        <element name="CDAtributos" positionX="333" positionY="192" width="128" height="148"/>
+    </elements>
+</model>
